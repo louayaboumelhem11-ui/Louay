@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Admin • LIVE STOCK</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand"><span class="dot"></span><span>LIVE STOCK • Admin</span></div>
+      <div class="nav">
+        <a class="pill" href="index.html">Store</a>
+        <a class="pill" href="orders.html">Orders</a>
+        <a class="pill" href="https://t.me/T_T_C_c_C" target="_blank" rel="noopener">Support</a>
+      </div>
+    </div>
+
+    <div id="login" class="panel" style="margin-top:18px">
+      <div class="title" style="font-size:22px">Admin Login</div>
+      <p class="sub">Username: <b>admin</b></p>
+      <div class="form">
+        <div class="full">
+          <div class="small">Password</div>
+          <input class="input kbd" id="pw" type="password" placeholder="Password"/>
+        </div>
+        <div class="full">
+          <button class="btn" id="btnLogin">Login</button>
+          <div class="notice small">Password الحالي مضبوط على: <span class="kbd">louay2011$$</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="panel" class="panel" style="margin-top:18px;display:none">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+        <div>
+          <div class="title" style="font-size:22px;margin:0">Control Panel</div>
+          <div class="sub">Products • Stock • Orders • Settings</div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="pill active" data-tab="products">Products</button>
+          <button class="pill" data-tab="stock">Stock</button>
+          <button class="pill" data-tab="orders">Orders</button>
+          <button class="pill" data-tab="settings">Settings</button>
+          <button class="pill" id="logout">Logout</button>
+        </div>
+      </div>
+
+      <div id="tab-products" style="margin-top:14px"></div>
+      <div id="tab-stock" style="margin-top:14px;display:none"></div>
+      <div id="tab-orders" style="margin-top:14px;display:none"></div>
+      <div id="tab-settings" style="margin-top:14px;display:none"></div>
+    </div>
+
+    <div class="footer">Admin Demo: كل البيانات تُحفظ في LocalStorage (بنفس المتصفح).</div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
